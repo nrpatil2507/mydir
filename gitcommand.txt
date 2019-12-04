@@ -1,0 +1,197 @@
+1git config
+set configuration level to git
+
+git config --global user.email->sets the usernmae and email to be used with commit
+
+->now core.editor in config
+
+
+git config --global core.editor "vim"~
+git config --global core.editor "nano -w"~
+
+
+->changes the color 
+
+git config --global color.grep.filename green
+
+color.status
+color.pager
+color.checkout
+color.branch
+
+
+->alias name
+
+git config --global alias.c commit
+
+
+
+2 git init
+
+to initiallize or create new repository
+
+git init
+
+
+
+3>git clone
+to copy the existing repository in local machine
+
+git clone <repository url>
+
+
+
+4>add
+git add [filename]
+adding files to staging area
+
+git add -A adding all the changes and new file to staging area
+
+
+git add * add all the files
+
+5>commit
+
+git commit -m "msg"
+
+this command records or snapshots all the files permenanatly  in the  version history 
+
+git commit -a
+all the files that added with th git add command and any changes are made by us
+
+
+
+6>status
+
+git status
+
+show all the files that have to be commited
+
+
+7>rm
+
+git rm filename
+
+delet a file from working directory and satges the deletion
+
+
+8>log
+show summary of changes
+
+git log
+git log --summary
+
+git log --oneline
+
+git log --follow [filename]
+
+
+
+9>branch
+
+git branch->display all the branches
+
+git branch branchname
+
+create new branch
+
+git branch -a 
+display all the branches
+
+git branch -d branchname 
+
+delete branch localy
+
+git branch -m old new
+rename a branch localy
+git brancha -b branchname 
+
+
+10checkout
+
+git checkout branchname
+swith to branch
+
+git checkout -b branch name
+
+creat a new branch and switch to it
+
+git checkout - switch the branch last chekout
+
+git checkout --filename dicard the changes made in file
+
+
+
+11remote
+
+git remote add origin url
+connect local repository to the remote server
+
+git remote set-url origin ssh:
+
+12merge
+
+git merge branchname
+merge the branch to curent branch
+
+git merge source targe
+merge source branch to target branch
+
+
+13push
+
+git push
+push all the changes to remote repository
+
+git push origin branchname
+push the branch to remote repository
+
+git push -u origin branchname
+push changes to the remote repository
+
+git push origin --delete branchname
+or 
+git push origin :branchname
+delete remote branch
+
+git push -all origin
+push all the branches to the remote repository
+
+14>pull
+
+git pull
+
+upadates the local repository to the newst commit
+
+git pull origin branchname
+
+pull the changes from remote repository	
+
+
+15 mv
+
+
+16 reset 
+git reset filename
+unsatged the file but preserve the contain of file undo
+
+git reset <commit>
+it will undo the changes till specified commit
+
+git reset -hard <commit>
+
+discard all the history
+and goes back to specified commit.
+
+git reset HEAD~1 to reset changes to first commit
+
+17  diff
+git diff
+
+git diff --staged
+
+git diff firstbranch second branch 
+
+
+18gitg for gui purpose
+
